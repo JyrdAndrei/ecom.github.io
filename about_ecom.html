@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" href="img/TABlogo.png" type="image/png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecom About</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <header>
+            <div class="nav container">
+                <div class="sdlogo"><img src="img/ECOMlogo.png" alt=""></div>
+                <div class="navigation6">
+                    <ul>
+                        <li><a href="#page-one">About</a></li>
+                        <li><a href="#page-two">Owner</a></li>
+                        <li><a href="#page-three">Contact</a></li>
+                        <li><a href="index.html">Back</a></li>             
+                    </ul>
+                </div>
+
+                <!-- Search/Cart/User button -->
+                <i  class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+                <a href="user_profile.html"><img class="profile" src="img/KENN.jpg"></a>
+
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content"></div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₱0</div>
+                    </div>
+                    <!--BUY BUTTON-->
+                    <a href="checkout.html"><button type="button" class="btn-buy">Pay Now</button></a>
+                    <!--CLOSE CART-->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT ECOM -->
+        <div id="page-one">
+            <section class="about4 about-container">
+
+                <div class="about-box">
+                    <div class="ecom-banner">
+                        <img src="img/ecom_banner.jpg" alt="">
+                    </div>
+                    
+
+                    <div class="about-ecom">
+                        <p>
+                            <big><bold><i>ECOM</i></bold></big> stands as a beacon of reliability and trust in the realm of electronic components and equipment.
+                            Rooted in the vision of <bold>Mr. Kenn Gerald G. Rosilla</bold>, a visionary Computer Engineering student, 
+                            this online haven bridges the gap for both students and seasoned professionals seeking authentic, 
+                            high-quality electronic components. The emblematic letters C and E within the logo embody a deeper significance, 
+                            encapsulating the essence of the platform:
+                        </p>
+                        <p>
+                            <big><bold><i>E</i></bold></big> symbolizes the commitment to Computer Engineers, fostering a space tailored to their needs, 
+                            where they can access specialized resources and tools essential for their craft.
+                        </p>
+                        <p>
+                            <big><bold><i>C</i></bold></big> resonates with Electronic and Electric Components, affirming a dedication to curate a diverse array of items, 
+                            each meticulously vetted for its authenticity and reliability, ensuring users find only the finest quality offerings.
+                        </p>
+                        <p>
+                            ECOM transcends mere commerce; it epitomizes trust, assurance, and efficiency. 
+                            It stands as a testament to Kenn's journey and determination to establish a reputable source where individuals, much like himself, 
+                            can confidently acquire genuine electronic components without hesitation or doubt. This venture is more than an online shop; 
+                            it's a gateway for seamless access to the indispensable building blocks of innovation and technological advancement.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <div id="page-two">
+            <div class="owner-container">
+                
+                <div class="owner-box">
+                    <div class="box-top">
+                            <img class="kennpic" src="img/circle_idpic.png" alt="">
+                        <i class="bx bx-dots-vertical-rounded"></i>
+
+
+                    </div>
+
+                    <div class="about-main">
+                        <div class="about-owner">
+                            <div class="owner-content">
+                                <h2><small>MR. ROSILLA, KENN</small></h2>
+                                <p> Currently a third year student at Polytechnic University of the Philippines, Lopez, Quezon branch pursuing Diploma in Computer Engineering Technology. 
+                                    A person who strives to improve oneself, who seeks new learning to enhance my knowledge and skills. I am passionate with what I am doing and 
+                                    I am someone who go further to achieve my goals and dreams in life. Like what my saying “Creates new possibilities, Innovate new things, DO and be BETTER!” </p>
+                                <button class="owner-btn">More info.</button>
+                            </div>
+                            <div class="owner-image">
+                                <img src="img/kenworking.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <!--CONTACT-->
+        <div id="page-three">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <div class="footer-logo"><img src="img/ECOMlogo.png" alt=""></div>
+                <ul class="social_icon">
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="#page-one">About</a></li>
+                    <li><a href="#page-two">Owner</a></li>
+                    <li><a href="#page-three">Contact</a></li>
+                </ul>
+                <p> ⒸCopyright Ecom | All Rights Reserved </p>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="/main.js"></script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelector(".logoglass-card"), {
+		        max: 25,
+		        speed: 400
+	        });
+        </script>
+
+    </body>
+</html>

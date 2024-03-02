@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" href="img/TABlogo.png" type="image/png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Ecom</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <header class="" id="">
+            <div class="nav container">
+                <div class="sdlogo"><img src="img/ECOMlogo.png" alt=""></div>
+                
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#page-one">Home</a></li>
+                        <li><a href="about_ecom.html">About</a></li>
+                        <li><a href="#page-two">Dashboard</a></li>
+                        <li><a href="ecom_products.html">Products</a></li>
+                        <li><a href="#page-three">Contact</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Search/Cart Button -->
+                <a href="search.html"><i class="bx bx-search nav_search" id="search-btn"></i></a>
+                <i  class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+
+                <div class="nav_actions">
+                    <!-- Login button -->
+                    <label for="show" class="show-btn">Login</label>
+                </div>
+
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content"></div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₱0</div>
+                    </div>
+                    <!--BUY BUTTON-->
+                    <a href="checkout.html"><button type="button" class="btn-buy">Pay Now</button></a>
+                    <!--CLOSE CART-->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+                
+
+            </div>
+        </header>
+        
+        <div id="page-one">
+
+            <!--==========PRODUCTS==========-->
+            <section class="shop container">
+                <div class="top-greet">ONLINE SHOP</div>
+                <div class="ecom-greet"><img src="img/ECOMspace.png" alt=""></div>
+
+                
+                <section class="property-slide">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" value="" id="radio1">
+                            <input type="radio" name="radio-btn" value="" id="radio2">
+                            <input type="radio" name="radio-btn" value="" id="radio3">
+                            <input type="radio" name="radio-btn" value="" id="radio4">
+                            <input type="radio" name="radio-btn" value="" id="radio5">
+                            <input type="radio" name="radio-btn" value="" id="radio6">
+                            <input type="radio" name="radio-btn" value="" id="radio7">
+                            <input type="radio" name="radio-btn" value="" id="radio8">
+                            <input type="radio" name="radio-btn" value="" id="radio9">
+
+
+                            <div class="slide first">
+                                <img src="img/banner1.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner2.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner3.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner4.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner5.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner6.jpg" alt="">
+                            </div>  
+                            <div class="slide">
+                                <img src="img/banner7.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner8.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="img/banner9.jpg" alt="">
+                            </div>
+
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                                <div class="auto-btn5"></div>
+                                <div class="auto-btn6"></div>
+                                <div class="auto-btn7"></div>
+                                <div class="auto-btn8"></div>
+                                <div class="auto-btn9"></div>
+                            </div>
+                        </div>
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+                            <label for="radio6" class="manual-btn"></label>
+                            <label for="radio7" class="manual-btn"></label>
+                            <label for="radio8" class="manual-btn"></label>
+                            <label for="radio9" class="manual-btn"></label>
+                        </div>                        
+
+                    </div>
+                </section>
+
+
+                <div class="login_form">
+                    <input type="checkbox" id="show">
+                    <div class="login-container">
+                        <label for="show" class="close-btn" title="close">&times;</label>
+                        <form action="" method="POST" class="login-email">
+                            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+                            <div class="input-group">
+                                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                            </div>
+                            <div class="input-group">
+                                <button name="submit" class="btn">Login</button>
+                            </div>
+                            <p class="login-register-text">Don't have an account? <a href="#">Register Here</a>.</p>
+                        </form>
+        
+                        <!-- (PROBLEM 1) Hindi ma-echange yung login form sa register form once na pinindot yung "Register Here" dun sa baba ng login form.
+                        Tapos papano yung login form mapapunta sa ilalim ng navigation bar kasi kapag ini-scroll ko pababa na naka display yung login form sa home screen, na daan dun sa top ng navigation bar. -->
+        
+                        <!--<label for="show" class="#" title="close">&times;</label>
+                        <form action="" method="POST" class="login-email">
+                            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+                            <div class="input-group">
+                                <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+                            </div>
+                            <div class="input-group">
+                                <button name="submit" class="btn">Register</button>
+                            </div>
+                            <p class="login-register-text">Have an account? <a href="index.html">Login Here</a>.</p>
+                        </form>-->
+        
+                    </div>
+                </div>
+
+
+                <div class="ecom-quotes">
+                    <p> <b>Get what you NEED</b>, where quality meets <i>convenience</i>, 
+                        shopping feels like a <b>BREEZE</b>.
+                    </p>
+                </div>
+
+                <h2 class="section-title">RANDOM RECOMMENDATION ITEMS</h2>
+                <!--SHOP CONTENT-->
+                <div class="shop-content">
+                    <!--BOX 1-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ARDUINO UNO R3.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ARDUINO UNO R3</h2>
+                        <span class="price">₱480.84</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 2-->
+                    <div class="product-box">
+                        <img 
+                            src="img/MAX30102.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">MAX30102 SENSOR</h2>
+                        <span class="price">₱150</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 3-->
+                    <div class="product-box">
+                        <img 
+                            src="img/BREADBOARD.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">BREAD BOARD</h2>
+                        <span class="price">₱105</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 4-->
+                    <div class="product-box">
+                        <img 
+                            src="img/DRIVER SHIELD.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">DRIVER SHIELD</h2>
+                        <span class="price">₱130</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 5-->
+                    <div class="product-box">
+                        <img 
+                            src="img/JUMPER WIRES.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">JUMPER WIRES</h2>
+                        <span class="price">₱49</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 6-->
+                    <div class="product-box">
+                        <img 
+                            src="img/OLED SCREEN DISPLAY.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">OLED SCREEN DISPLAY</h2>
+                        <span class="price">₱449</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 7-->
+                    <div class="product-box">
+                        <img 
+                            src="img/SERVO.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">SERVO</h2>
+                        <span class="price">₱89</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 8-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ULTRASONIC SENSOR.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ULTRASONIC SENSOR</h2>
+                        <span class="price">₱89</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 9-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ARDUINO UNO R4.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ARDUINO UNO R4</h2>
+                        <span class="price">₱2250</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 10-->
+                    <div class="product-box">
+                        <img 
+                            src="img/MECANUM WHEEL.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">MECANUM WHEEL</h2>
+                        <span class="price">₱549</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+        </div>
+
+        <!--DASHBOARD-->
+        <div id="page-two">
+            <div class="dashboard-container">
+                <div class="dashboard-box">
+                    <h1 class="dashboard-title">DASHBOARD</h1>
+
+                    <div class="board-content">
+                        
+                        <div class="dashboard-body">
+
+                            <div class="board">
+
+                                <div class="dashboard-container">
+                                    <div class="dashboard-content">
+
+                                        <div class="dashboard-card">
+                                            <div class="card-content">
+                                                <div class="dashboard-image">
+                                                    <img src="img/ARDUINO UNO R3.jpg" alt=""/>
+                                                </div>
+
+                                                <div class="top">
+                                                    <h1 class="top-1">1</h1>
+                                                </div>
+
+                                                <div class="item-name">
+                                                    <span class="item1">ARDUINO UNO R3</span>
+                                                    <span class="rank">Top 1 Item</span>
+                                                </div>
+            
+                                                <div class="rating">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+
+                                                <div class="dashboard-button">
+                                                    <button class="rate">Rate</button>
+                                                    <button class="addtocart">Add to Cart</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="dashboard-card">
+                                            <div class="card-content">
+                                                <div class="dashboard-image">
+                                                    <img src="img/JUMPER WIRES.jpg" alt=""/>
+                                                </div>
+
+                                                <div class="top">
+                                                    <h1 class="top-1">2</h1>
+                                                </div>
+
+                                                <div class="item-name">
+                                                    <span class="item1">JUMPER WIRES</span>
+                                                    <span class="rank">Top 2 Item</span>
+                                                </div>
+            
+                                                <div class="rating">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+
+                                                <div class="dashboard-button">
+                                                    <button class="rate">Rate</button>
+                                                    <button class="addtocart">Add to Cart</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="dashboard-card">
+                                            <div class="card-content">
+                                                <div class="dashboard-image">
+                                                    <img src="img/BREADBOARD.jpg" alt=""/>
+                                                </div>
+
+                                                <div class="top">
+                                                    <h1 class="top-1">3</h1>
+                                                </div>
+
+                                                <div class="item-name">
+                                                    <span class="item1">BREAD BOARD</span>
+                                                    <span class="rank">Top 3 Item</span>
+                                                </div>
+            
+                                                <div class="rating">
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bxs-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                    <i class='bx bx-star'></i>
+                                                </div>
+
+                                                <div class="dashboard-button">
+                                                    <button class="rate">Rate</button>
+                                                    <button class="addtocart">Add to Cart</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                        
+                                    </div>
+                                </div>
+
+                                
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p class="dashboard-description">Explore our ECOM's dashboard for the top three Arduino electronic components, featuring innovation-rich kits,
+                        <br>versatile sensors, and cutting-edge development boards to power up your projects with ease and precision.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <!--CONTACT-->
+        <div id="page-three">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <div class="footer-logo"><img src="img/ECOMlogo.png" alt=""></div>
+                <ul class="social_icon">
+                    <li><a href="https://www.facebook.com/kenngerald.rosilla"  target="_blank"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="https://www.instagram.com/___k_e_n_n___/"  target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="https://twitter.com/kenn82992497?t=kZSmW6h_VYhxaKQnNyfHIw&s=09" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="#page-one">Home</a></li>
+                    <li><a href="about_ecom.html">About</a></li>
+                    <li><a href="#page-two">Dashboard</a></li>
+                    <li><a href="ecom_products.html">Products</a></li>
+                    <li><a href="#page-three">Contact</a></li>
+                </ul>
+                <p> ⒸCopyright Ecom | All Rights Reserved </p>
+            </footer>
+        </div>
+
+
+        <script src="/main.js"></script>
+    </body>
+</html>

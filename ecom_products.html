@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" href="img/TABlogo.png" type="image/png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecom Product</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <header>
+            <div class="nav container">
+                <div class="sdlogo"><img src="img/ECOMlogo.png" alt=""></div>
+                <div class="navigation3">
+                    <ul>
+                        <li><a href="#page-one">Categories</a></li>
+                        <li><a href="#page-two">Components</a></li>
+                        <li><a href="#page-three">Contact</a></li>
+                        <li><a href="index.html">Back</a></li>             
+                    </ul>
+                </div>
+
+                <!-- Search/Cart/User button -->
+                <a href="search.html"><i class="bx bx-search nav__search" id="search-btn"></i></a>
+                <i  class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+                <a href="user_profile.html"><img class="profile" src="img/KENN.jpg"></a>
+
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content"></div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₱0</div>
+                    </div>
+                    <!--BUY BUTTON-->
+                    <a href="checkout.html"><button type="button" class="btn-buy">Pay Now</button></a>
+                    <!--CLOSE CART-->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+
+        
+
+
+        <div id="page-one">
+
+            <h2 class="category-subtitle">ELECTRONIC COMPONENTS</h2>
+            <h1 class="category-title">CATEGORIES</h1>
+            <div class="category-body">
+
+                <div class="categories-container">
+                    <div class="categories-glass" style="--r:-15;" data-text="Microcontroller">
+                        <li><a href="microcontroller.html"><i class='bx bx-chip'></i></a></li>
+                    </div>
+                    <div class="categories-glass" style="--r:5;" data-text="Sensor">
+                        <li><a href="sensor.html"><i class='bx bx-mobile-vibration'></i></a></li>
+                    </div>
+                    <div class="categories-glass" style="--r:25;" data-text="LCD & Display">
+                        <li><a href="lcd&display.html"><i class='bx bx-layout'></i></a></li>
+                    </div>
+                    <div class="categories-glass" style="--r:-15;" data-text="Prototyping">
+                        <li><a href="prototyping.html"><i class='bx bx-vector'></i></a>
+                    </div>
+                    <div class="categories-glass" style="--r:5;" data-text="Other">
+                        <li><a href="other.html"><i class='bx bx-category'></i></a></li>
+                    </div>
+                </div>
+            </div>
+            <p class="category-description">Find your missing link in our online store, guiding you effortlessly
+                <br>to the exact electronic component you seek, ensuring every project finds its perfect piece.
+            </p>
+
+        </div>
+        <!--ALL PRODUCTS-->
+        <div id="page-two">
+            <section class="shop2 container2">
+                <h2 class="section-title">ELECTRONIC COMPONENTS</h2>
+                <!--SHOP CONTENT-->
+                <div class="shop-content">
+                    <!--BOX 1-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ARDUINO MEGA 2560 R3.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ARDUINO MEGA 2560 R3</h2>
+                        <span class="price">₱979</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 1-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ARDUINO UNO R3.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ARDUINO UNO R3</h2>
+                        <span class="price">₱480.84</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 2-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ARDUINO UNO R4.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ARDUINO UNO R4</h2>
+                        <span class="price">₱2250</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 3-->
+                    <div class="product-box">
+                        <img 
+                            src="img/BATTERY.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">BATTERY 18650</h2>
+                        <span class="price">₱185</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 4-->
+                    <div class="product-box">
+                        <img 
+                            src="img/BATTERY HOLDER.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">BATTERY HOLDER</h2>
+                        <span class="price">₱58</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 5-->
+                    <div class="product-box">
+                        <img 
+                            src="img/BLUETOOTH MODULE.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">BLUETOOTH MODULE</h2>
+                        <span class="price">₱199</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 6-->
+                    <div class="product-box">
+                        <img 
+                            src="img/BREADBOARD.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">BREAD BOARD</h2>
+                        <span class="price">₱105</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 7-->
+                    <div class="product-box">
+                        <img 
+                            src="img/DRIVER SHIELD.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">DRIVER SHIELD</h2>
+                        <span class="price">₱129</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 8-->
+                    <div class="product-box">
+                        <img 
+                            src="img/DS18B20 SENSOR-01.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">DS18B20 SENSOR</h2>
+                        <span class="price">₱99</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 8-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ESP8266.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ESP8266</h2>
+                        <span class="price">₱159</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 9-->
+                    <div class="product-box">
+                        <img 
+                            src="img/JUMPER WIRES.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">JUMPER WIRES</h2>
+                        <span class="price">₱49</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 10-->
+                    <div class="product-box">
+                        <img 
+                            src="img/LCD DISPLAY I2C 20x4.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">LCD MODULE I2C 20x4</h2>
+                        <span class="price">₱305</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 10-->
+                    <div class="product-box">
+                        <img 
+                            src="img/LCD MODULE.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">LCD MODULE</h2>
+                        <span class="price">₱149</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 11-->
+                    <div class="product-box">
+                        <img 
+                            src="img/LIGHT INDICATOR.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">LIGHT INDICATOR</h2>
+                        <span class="price">₱73</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 12-->
+                    <div class="product-box">
+                        <img 
+                            src="img/MAX30102.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">MAX30102 SENSOR</h2>
+                        <span class="price">₱149</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 13-->
+                    <div class="product-box">
+                        <img 
+                            src="img/MECANUM WHEEL.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">MECANUM WHEEL</h2>
+                        <span class="price">₱549</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 14-->
+                    <div class="product-box">
+                        <img 
+                            src="img/MQ135 SENSOR.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">MQ135 SENSOR</h2>
+                        <span class="price">₱165</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 15-->
+                    <div class="product-box">
+                        <img 
+                            src="img/OLED LCD I2C 0.91.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">OLED DISPLAY I2C 0.91</h2>
+                        <span class="price">₱149</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 15-->
+                    <div class="product-box">
+                        <img 
+                            src="img/OLED LCD SSD1309.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">OLED I2C SSD1309</h2>
+                        <span class="price">₱844</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 15-->
+                    <div class="product-box">
+                        <img 
+                            src="img/OLED SCREEN DISPLAY.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">OLED SCREEN DISPLAY</h2>
+                        <span class="price">₱449</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 15-->
+                    <div class="product-box">
+                        <img 
+                            src="img/OSEPP DH11.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">OSEPP DH11 SENSOR</h2>
+                        <span class="price">₱125</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 16-->
+                    <div class="product-box">
+                        <img 
+                            src="img/SERVO.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">SERVO</h2>
+                        <span class="price">₱89</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 17-->
+                    <div class="product-box">
+                        <img 
+                            src="img/TT GEAR MOTOR.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">TT GEAR MOTOR</h2>
+                        <span class="price">₱65</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    <!--BOX 18-->
+                    <div class="product-box">
+                        <img 
+                            src="img/ULTRASONIC SENSOR.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ULTRASONIC SENSOR</h2>
+                        <span class="price">₱89</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                    
+
+                </div>       
+            </section>
+        </div>
+
+        <!--CONTACT-->
+        <div id="page-three">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <div class="footer-logo"><img src="img/ECOMlogo.png" alt=""></div>
+                <ul class="social_icon">
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="#page-one">Categories</a></li>
+                    <li><a href="#page-two">Components</a></li>
+                    <li><a href="#page-three">Contact</a></li>
+                </ul>
+                <p> ⒸCopyright Ecom | All Rights Reserved </p>
+            </footer>
+        </div>
+
+        <script src="/main.js"></script>
+    </body>
+</html>

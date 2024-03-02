@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="shortcut icon" href="img/TABlogo.png" type="image/png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecom User Profile</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ===== ===== Remix Font Icons Cdn ===== ===== -->
+        <link rel="stylesheet" href="fonts/remixicon.css">
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <header>
+            <div class="nav container">
+                <div class="sdlogo"><img src="img/ECOMlogo.png" alt=""></div>
+                <div class="navigation5">
+                    <ul>
+                        <li><a href="#page-one">Profile</a></li>
+                        <li><a href="#page-three">Contact</a></li>
+                        <li><a href="ecom_products.html">Back</a></li>             
+                    </ul>
+                </div>
+                
+                <i  class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <div class="cart-content"></div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₱0</div>
+                    </div>
+                    <!--BUY BUTTON-->
+                    <a href="checkout.html"><button type="button" class="btn-buy">Pay Now</button></a>
+                    <!--CLOSE CART-->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+
+        <div id="page-one">
+            <div class="nav container3">
+                <div class="user-body">
+                    <!-- ===== ===== Main-Container ===== ===== -->
+                    <div class="user-container">
+
+                        <!-- ===== ===== Header/Navbar ===== ===== -->
+                        
+
+
+                        <!-- ===== ===== User Main-Profile ===== ===== -->
+                        <section class="userProfile card">
+                            <div class="profile">
+                                <figure><img src="img/KENN.jpg" alt="profile" width="250px" height="250px"></figure>
+                            </div>
+                        </section>
+
+
+                        <!-- ===== ===== Work & Skills Section ===== ===== -->
+                        <section class="work_skills card">
+
+                            <!-- ===== ===== Work Contaienr ===== ===== -->
+                            <div class="work">
+                                <h1 class="heading">Location</h1>
+                                <div class="primary">
+                                    <h1>Calauag, Quezon</h1>
+                                    <span>Primary</span>
+                                    <p>Brgy. Vinas Calauag, Quezon <br> Purok 5, Ibaba</p>
+                                </div>
+
+                                <div class="secondary">
+                                    <h1>Lopez, Quezon</h1>
+                                    <span>Secondary</span>
+                                    <p>Brgy. Burgos Lopez, Quezon <br> Escobar Street</p>
+                                </div>
+                            </div>
+
+                            <!-- ===== ===== Skills Contaienr ===== ===== -->
+                            <div class="skills">
+                                <h1 class="heading">Customer Rate</h1>
+                                <ul>
+                                    <li style="--i:0">Quality</li>
+                                    <li style="--i:1">Reliable</li>
+                                    <li style="--i:2">Price</li>
+                                    <li style="--i:3">Service</li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+                        <!-- ===== ===== User Details Sections ===== ===== -->
+                        <section class="userDetails card">
+                            <div class="userName">
+                                <h1 class="name">Kenn Rosilla</h1>
+                                <div class="map">
+                                    <i class="ri-map-pin-fill ri"></i>
+                                    <span>Philippines</span>
+                                </div>
+                                <p>Customer</p>
+                            </div>
+
+                            <div class="rank">
+                                <h1 class="heading">Rankings</h1>
+                                <span>8,6</span>
+                                <div class="rating">
+                                    <i class="ri-star-fill rate"></i>
+                                    <i class="ri-star-fill rate"></i>
+                                    <i class="ri-star-fill rate"></i>
+                                    <i class="ri-star-fill rate"></i>
+                                    <i class="ri-star-fill rate underrate"></i>
+                                </div>
+                            </div>
+
+                            <div class="btns">
+                                <ul>
+                                    <li class="sendMsg">
+                                        <i class="ri-chat-4-fill ri"></i>
+                                        <a href="#">Send Message</a>
+                                    </li>
+
+                                    <li class="sendMsg active">
+                                        <i class="ri-check-fill ri"></i>
+                                        <a href="#">Contacts</a>
+                                    </li>
+
+                                    <li class="sendMsg">
+                                        <a href="#">Report User</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+                        <!-- ===== ===== Timeline & About Sections ===== ===== -->
+                        <section class="timeline_about card">
+                            <div class="tabs">
+                                <ul>
+                                    <li class="timeline">
+                                        <i class="ri-eye-fill ri"></i>
+                                        <span>Timeline</span>
+                                    </li>
+
+                                    <li class="about active">
+                                        <i class="ri-user-3-fill ri"></i>
+                                        <span>About</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="contact_Info">
+                                <h1 class="heading">Contact Information</h1>
+                                <ul>
+                                    <li class="phone">
+                                        <h1 class="label">Phone:</h1>
+                                        <span class="info">+69662664975</span>
+                                    </li>
+
+                                    <li class="address">
+                                        <h1 class="label">Address:</h1>
+                                        <span class="info">Brgy. Vinas Calauag, Quezon <br> Purok 5, Ibaba</span>
+                                    </li>
+
+                                    <li class="email">
+                                        <h1 class="label">E-mail:</h1>
+                                        <span class="info">kenngeraldrosilla@gmail.com</span>
+                                    </li>
+
+                                    <li class="site">
+                                        <h1 class="label">Social Media:</h1>
+                                        <span class="info">https://www.facebook.com/kenngerald.rosilla</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="basic_info">
+                                <h1 class="heading">Basic Information</h1>
+                                <ul>
+                                    <li class="birthday">
+                                        <h1 class="label">Birthday:</h1>
+                                        <span class="info">Oct 01, 2002</span>
+                                    </li>
+
+                                    <li class="sex">
+                                        <h1 class="label">Gender:</h1>
+                                        <span class="info">Male</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--CONTACT-->
+        <div id="page-three">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <div class="footer-logo"><img src="img/ECOMlogo.png" alt=""></div>
+                <ul class="social_icon">
+                    <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="#page-one">Profile</a></li>
+                    <li><a href="#page-three">Contact</a></li>
+                </ul>
+                <p> ⒸCopyright Ecom | All Rights Reserved </p>
+            </footer>
+        </div>
+
+        <script src="/main.js"></script>
+
+    </body>
+</html>
